@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <script type='text/javascript' src="http://lib.sinaapp.com/js/angular.js/angular-1.2.19/angular.js"></script> 
+  <script src="app.js"></script>
+</head>
+<body ng-controller="GreetingController">
+  {{greeting}} User! The current date/time is <span>{{now | date:'medium'}}</span>. 
+  <br/>
+
+  <button ng-click='getRandomHelloMessage()'>Random Hello Message Button</button>
+</body>
+</html>
