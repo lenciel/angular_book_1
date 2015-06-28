@@ -1,0 +1,12 @@
+<!DOCTYPE <!DOCTYPE html>
+<html ng-app>
+<head>
+  <title>two way data binding for fb avatar</title>
+  <script type='text/javascript' src="http://lib.sinaapp.com/js/angular.js/angular-1.2.19/angular.js"></script>
+</head>
+<body ng-init="fbID='1022108725'">
+Input your FacebookID (not your uersname)<input type="text" ng-model="fbID"><br/>
+<span>current id: {{fbID}}</span><br/>
+<div><img ng-src="http://graph.facebook.com/{{fbID}}/picture?type=normal"/></div>
+</body>
+</html>
