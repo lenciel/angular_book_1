@@ -1,0 +1,13 @@
+<!DOCTYPE <!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<title ng-bind="title"></title>
+  	<script type='text/javascript' src="http://lib.sinaapp.com/js/angular.js/angular-1.2.19/angular.js"></script>
+  	<script type="text/javascript" src="js/app.js"></script>
+  	<script type="text/javascript" src="js/controllers.js"></script>
+</head>
+<body ng-controller="TimeoutController">
+<span> It is : {{now}}</span>	
+<button ng-click="fetchNewDate()">Update after 3 seconds</button>
+</body>
+</html>
