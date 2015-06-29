@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<title ng-bind="title"></title>
+  	<script type='text/javascript' src="http://lib.sinaapp.com/js/angular.js/angular-1.2.19/angular.js"></script>
+  	<script type="text/javascript" src="js/app.js"></script>
+  	<script type="text/javascript" src="js/controllers.js"></script>
+</head>
+<body ng-controller="SiteController">
+<span> {{publisher}} excels in {{type}} books</span>
+<div ng-controller="BookController">
+	<h3>Some of the popular books from {{publisher}}</h3><br/>
+	<span>Your current wish list count: {{wishListCount}}</span><br/>
+	<ul>
+		<li ng-repeat="book in books">{{book.bookName}} <a href="#" ng-click="addToWishList(book)">Add to Wish List</a></li> 
+	</ul>	
+</body>
+</html>
