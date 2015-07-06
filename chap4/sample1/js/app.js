@@ -4,11 +4,11 @@ angular.module('MyApp', ["MyApp.controllers", "ngRoute"]).run(function($rootScop
 	$rootScope.title = 'Multiple Views and Routes';
 });
 
-angular.module('MyApp').config($routeProvider, function() {
-	$routeProvider.when('hello', {
+angular.module('MyApp').config(function($routeProvider) {
+	$routeProvider.when('/hello', {
 		controller: "HelloController",
 		templateUrl: "partials/hello.inc.html"
-	}).when('world', {
+	}).when('/world', {
 		controller: "WorldController",
 		templateUrl: "partials/world.inc.html"
 	})
